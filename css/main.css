@@ -26,6 +26,7 @@ body {
   margin: 0; }
   body .wrapper {
     margin: auto;
+    min-width: 375px;
     height: 100%;
     padding-top: 45px; }
   body .container {
@@ -35,17 +36,30 @@ body {
 
 header {
   margin-bottom: 180px; }
-  header .container img {
-    width: 300px; }
+  header .container {
+    position: relative; }
+    header .container::after {
+      content: '';
+      position: absolute;
+      width: 30%;
+      border-top: 4px solid #fff;
+      top: 0;
+      right: 0; }
+    header .container img {
+      width: 300px; }
 
 main {
-  margin-bottom: 100px; }
+  height: 1000px;
+  margin-bottom: 100px;
+  background-image: url("../img/hand.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
   main .container .container_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    main .container .container_item div {
+    main .container .container_item div:nth-child(1) {
       width: 350px;
       height: 350px;
       border-radius: 50%;
