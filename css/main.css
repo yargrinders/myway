@@ -46,8 +46,8 @@ main {
     align-items: center;
     justify-content: center; }
     main .container .container_item div {
-      width: 450px;
-      height: 450px;
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       box-shadow: -10px 10px 18px 0px rgba(0, 0, 0, 0.27);
       background-color: #d36355;
