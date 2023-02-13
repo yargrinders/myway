@@ -93,8 +93,16 @@ footer {
       width: 80%; }
 
 @media (max-width: 800px) {
+  header {
+    margin-bottom: 120px; }
+    header .container img {
+      width: 200px; }
+
   main .container .container_item div:nth-child(1) {
     width: 350px;
     height: 350px; } }
+@media (max-width: 560px) {
+  main {
+    background-size: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

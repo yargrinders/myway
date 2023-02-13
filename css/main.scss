@@ -111,6 +111,14 @@ footer {
 }
 //MediaR
 @media (max-width:800px) {
+    header {
+        margin-bottom: 120px;
+        .container {
+            img {
+                width: 200px;
+            }
+        }
+    }
     main {
         .container {
             .container_item {
@@ -120,6 +128,11 @@ footer {
                 }
             }
         }
+    }
+}
+@media (max-width:560px) {
+    main {
+        background-size: 50%;
     }
 }
 // sass --watch main.scss:main.css
